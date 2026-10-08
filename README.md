@@ -189,27 +189,28 @@ public void With_Korean_Locale()
 |`ar`          |Arabic                    ||`ge`          |Georgian                  |
 |`az`          |Azerbaijani               ||`hr`          |Hrvatski                  |
 |`cz`          |Czech                     ||`id_ID`       |Indonesia                 |
-|`de`          |German                    ||`it`          |Italian                   |
-|`de_AT`       |German (Austria)          ||`ja`          |Japanese                  |
-|`de_CH`       |German (Switzerland)      ||`ko`          |Korean                    |
-|`el`          |Greek                     ||`lv`          |Latvian                   |
-|`en`          |English                   ||`nb_NO`       |Norwegian                 |
-|`en_AU`       |English (Australia)       ||`ne`          |Nepalese                  |
-|`en_AU_ocker` |English (Australia Ocker) ||`nl`          |Dutch                     |
-|`en_BORK`     |English (Bork)            ||`nl_BE`       |Dutch (Belgium)           |
-|`en_CA`       |English (Canada)          ||`pl`          |Polish                    |
-|`en_GB`       |English (Great Britain)   ||`pt_BR`       |Portuguese (Brazil)       |
-|`en_IE`       |English (Ireland)         ||`pt_PT`       |Portuguese (Portugal)     |
-|`en_IND`      |English (India)           ||`ro`          |Romanian                  |
-|`en_NG`       |Nigeria (English)         ||`ru`          |Russian                   |
-|`en_US`       |English (United States)   ||`sk`          |Slovakian                 |
-|`en_ZA`       |English (South Africa)    ||`sv`          |Swedish                   |
-|`es`          |Spanish                   ||`tr`          |Turkish                   |
-|`es_MX`       |Spanish (Mexico)          ||`uk`          |Ukrainian                 |
-|`fa`          |Farsi                     ||`vi`          |Vietnamese                |
-|`fi`          |Finnish                   ||`zh_CN`       |Chinese                   |
-|`fr`          |French                    ||`zh_TW`       |Chinese (Taiwan)          |
-|`fr_CA`       |French (Canada)           ||`zu_ZA`       |Zulu (South Africa)       |
+|`da`          |Danish                    ||`it`          |Italian                   |
+|`de`          |German                    ||`ja`          |Japanese                  |
+|`de_AT`       |German (Austria)          ||`ko`          |Korean                    |
+|`de_CH`       |German (Switzerland)      ||`lv`          |Latvian                   |
+|`el`          |Greek                     ||`nb_NO`       |Norwegian                 |
+|`en`          |English                   ||`ne`          |Nepalese                  |
+|`en_AU`       |English (Australia)       ||`nl`          |Dutch                     |
+|`en_AU_ocker` |English (Australia Ocker) ||`nl_BE`       |Dutch (Belgium)           |
+|`en_BORK`     |English (Bork)            ||`pl`          |Polish                    |
+|`en_CA`       |English (Canada)          ||`pt_BR`       |Portuguese (Brazil)       |
+|`en_GB`       |English (Great Britain)   ||`pt_PT`       |Portuguese (Portugal)     |
+|`en_IE`       |English (Ireland)         ||`ro`          |Romanian                  |
+|`en_IND`      |English (India)           ||`ru`          |Russian                   |
+|`en_NG`       |Nigeria (English)         ||`sk`          |Slovakian                 |
+|`en_US`       |English (United States)   ||`sv`          |Swedish                   |
+|`en_ZA`       |English (South Africa)    ||`tr`          |Turkish                   |
+|`es`          |Spanish                   ||`uk`          |Ukrainian                 |
+|`es_MX`       |Spanish (Mexico)          ||`vi`          |Vietnamese                |
+|`fa`          |Farsi                     ||`zh_CN`       |Chinese                   |
+|`fi`          |Finnish                   ||`zh_TW`       |Chinese (Taiwan)          |
+|`fr`          |French                    ||`zu_ZA`       |Zulu (South Africa)       |
+|`fr_CA`       |French (Canada)           ||||
 
 
 ***Note:*** Some locales may not have a complete data set. For example, [`zh_CN`](https://github.com/faker-js/faker.js/tree/master/lib/locales/zh_CN) does not have a `lorem` data set, but [`ko`](https://github.com/faker-js/faker.js/tree/master/lib/locales/ko) has a `lorem` data set. **Bogus** will default to `en` if a *locale-specific* data set is not found. To further illustrate the previous example, the missing `zh_CN:lorem` data set will default to the `en:lorem` data set.
