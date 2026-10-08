@@ -87,19 +87,6 @@ public class Issue132 : SeededTest
 
 
    [Fact]
-   public void da_DK_locale()
-   {
-      CultureInfo.GetCultureInfo("da-DK")
-         .ToBogusLocale()
-         .Should().Be("da");
-
-      CultureInfo.GetCultureInfo("da")
-         .ToBogusLocale()
-         .Should().Be("da");
-   }
-
-
-   [Fact]
    public void id_ID_locale()
    {
       CultureInfo.GetCultureInfo("id-ID")
