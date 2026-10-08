@@ -4,6 +4,7 @@ Release Date: TBD
 * New locales: `da` (Danish), `bn_BD`, `cy`, `dv`, `en_GH`, `en_HK`, `en_NP`, `eo`, `fr_BE`, `fr_LU`, `fr_SN`, `he`, `hu`, `hy`, `ku_ckb`, `ku_kmr_latin`, `mk`, `mn_MN_cyrl`, `ro_MD`, `sl_SI`, `sr_RS_latin`, `ta_IN`, `th`, `ur`, `uz_UZ_latin`, `yo_NG`.
 * Existing locale data has changed to match upstream; seeded output for existing locales will differ from previous versions. Locale codes `cz`, `ge` and `en_IND` are unchanged.
 * Added `Bogus.Tests` coverage for the `da` locale and `da`/`da-DK` culture mapping.
+* Issue 554: Adds `Faker<T>.WithParameter()` and `Faker.GetParameter<T>()` / `TryGetParameter<T>()` for passing runtime values into rules.
 
 ## v35.6.5
 Release Date: 2025-10-25
