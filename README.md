@@ -798,6 +798,20 @@ public void create_rules_for_an_object_the_easy_way()
 ***Note***: When using the bulk `.Rules(...)` action, `StrictMode` cannot be set to `true` since individual properties of type `T` cannot be independently checked to ensure each property has a rule.
 
 
+#### Passing Parameters to Rules
+
+Use `WithParameter(name, value)` to hand runtime values to a `Faker<T>`, then read them inside any rule with `GetParameter<T>(name)` (or `TryGetParameter<T>`):
+
+```csharp
+var faker = new Faker<Order>()
+   .WithParameter("tenant", "acme")
+   .RuleFor(o => o.Tenant, f => f.GetParameter<string>("tenant"));
+
+faker.WithParameter("tenant", "globex"); // overwrites the previous value
+```
+
+Parameter names are case-insensitive and a missing name throws `KeyNotFoundException`. `Clone()` copies parameters into the clone. Other `Faker<T>` instances created inside a rule do not inherit them.
+
 ### Using `Enumerable.Range()` and LINQ 
 The `Enumerable.Range()` and LINQ are a great supplement when creating data with **Bogus**. Here's how to generate a simple list of email addresses:
 
